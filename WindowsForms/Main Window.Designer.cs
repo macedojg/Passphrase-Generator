@@ -35,6 +35,7 @@ namespace WindowsForms
             this.passphraseSize = new System.Windows.Forms.RichTextBox();
             this.resultBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.capitalizeBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Generate
@@ -91,11 +92,22 @@ namespace WindowsForms
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Passphrase:";
             // 
+            // capitalizeBox
+            // 
+            this.capitalizeBox.AutoSize = true;
+            this.capitalizeBox.Location = new System.Drawing.Point(12, 67);
+            this.capitalizeBox.Name = "capitalizeBox";
+            this.capitalizeBox.Size = new System.Drawing.Size(77, 19);
+            this.capitalizeBox.TabIndex = 5;
+            this.capitalizeBox.Text = "Capitalize";
+            this.capitalizeBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(609, 95);
+            this.Controls.Add(this.capitalizeBox);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.passphraseSize);
@@ -116,6 +128,7 @@ namespace WindowsForms
         private System.Windows.Forms.RichTextBox passphraseSize;
         private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox capitalizeBox;
     }
 }
 
